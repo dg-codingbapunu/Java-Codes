@@ -1,21 +1,14 @@
 class Hello {
 
 public static void main(String[] args) {
-// int a = 390;
-// byte b = 127;
-// b = (byte)a;
-// float f = 6.9f;
-// int t = (int)f;
-// System.out.println(t);
-// System.out.println(b);
-byte a = 20;
-byte b = 40;
-int result = a * b;
-System.out.println(result);
-// byte max value 127
-
+  
+  // int num1 = 8;
+  // num1 += 2;
+  // num1++;
+  // int result = num1++; output fetch the value then increment
+  // int result = ++num1; increment then fetch value
+  // System.out.println(result);
 }
-
 
 
 }
