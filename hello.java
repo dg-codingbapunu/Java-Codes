@@ -1,13 +1,14 @@
 class Hello {
 
 public static void main(String[] args) {
-  
-  // int num1 = 8;
-  // num1 += 2;
-  // num1++;
-  // int result = num1++; output fetch the value then increment
-  // int result = ++num1; increment then fetch value
-  // System.out.println(result);
+  int x = 7;
+  int y = 9;
+  double a = 7;
+  double b = 6;
+  // boolean result = x > y || a < b || a >2;
+  boolean result = x < y && a > b ;
+  System.out.println(!result);
+ 
 }
 
 
