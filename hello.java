@@ -1,15 +1,37 @@
 class Hello {
   public static void main(String[] args) {
-    int x = 91;
-int result = 0;
-// check odd or even
-// if (x%2==0) {
-//   result = 10;
-// } else {
-//   result = 20;
-// }
-result = x%2==0 ? 10 : 20;
-System.out.println(result);
+int n = 2;
+
+switch (n) {
+  case 1:
+    System.out.println("monday");
+    break;
+  
+  case 2:
+    System.out.println("tuesday");
+  break;
+
+  case 3:
+    System.out.println("wednesday");
+  break;
+  case 4:
+    System.out.println("thursday");
+  break;
+ case 5:
+    System.out.println("friday");
+    break;
+case 6:
+
+    System.out.println("saturday");
+    break;
+  
+  case 7:
+    System.out.println("sunday");
+    break;
+    default:
+    System.out.println("Enter a valid case");
+  
+}
 
   }
 }
