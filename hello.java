@@ -1,15 +1,18 @@
 class Hello {
+  public static void main(String[] args) {
+    int x = 9;
+    int y = 10;
+    int z = 87;
 
-public static void main(String[] args) {
-  int x = 7;
-  int y = 9;
-  double a = 7;
-  double b = 6;
-  // boolean result = x > y || a < b || a >2;
-  boolean result = x < y && a > b ;
-  System.out.println(!result);
- 
-}
+    if (x > y && x > z) {
+      System.out.println(x);
+      
+    } else if (y > z) {
+      System.out.println(y);
+    } else {
+      System.out.println(z);
+    }
 
 
+  }
 }
