@@ -2,15 +2,11 @@ class Hello {
   public static void main(String[] args) 
 {
 
- int i = 5;
- do {
 
-  System.out.println("Hi " +i);
-i++;
+for (int i = 4; i >=1; i--) {
+  System.out.println("Hello " + i);
+}
 
-    } while(i < 5);
-
-// if condition is false its print one time
 
 
 }
