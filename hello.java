@@ -1,22 +1,18 @@
 class Hello {
-  public static void main(String[] args) {
+  public static void main(String[] args) 
+{
 
-int i = 1;
-while (i <= 5) {
-  System.out.println("Hi " + i);
-int j = 1;
-while (j <= 3) {
-  System.out.println("hello " + j);
-  j++;
-  
-}
+ int i = 5;
+ do {
 
+  System.out.println("Hi " +i);
+i++;
 
-  i++;
-  
-}
+    } while(i < 5);
 
+// if condition is false its print one time
 
 
 }
-}
+
+           }
