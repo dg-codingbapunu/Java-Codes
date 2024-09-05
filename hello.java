@@ -1,35 +1,32 @@
+class Calculator {
+  int num = 5;
+  public int add (int n1 , int n2)
+{
+return n1 + n2;
 
-  class computer
-  {
-  public void playMusic() 
-    {
-System.out.println("music play..");
-    }
-    public String getPen(int cost) 
-    {
+}
+  
+}
+ 
+ 
+ 
+ 
+ 
+ 
+ public class Hello 
+{
 
-if (cost >=10) {
-  return "pen";
-} else {
-  return "nothing";
+public static void main(String[] args) {
+  
+Calculator obj = new Calculator();
+Calculator obj1 = new Calculator();
+
+// int r1 =obj.add(59, 78);
+// System.out.println(r1);
+obj1.num = 8;
+System.out.println(obj.num);
+System.out.println(obj1.num);
 }
 
-     
-    }
-  }
-  
-  
-  
-  
-  public class Hello 
-  {
-  public static void main(String[] args) 
-  {
 
-computer obj = new computer();
-obj.playMusic();
- String str = obj.getPen(5);
- System.out.println(str);
-    
-  }
- }
+}
