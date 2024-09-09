@@ -29,8 +29,12 @@ Student students[] = new Student[3];
 students[0] = s1;
 students[1] = s2;
 students[2] = s3;
-  for (int i = 0; i < students.length ; i ++) {
-    System.out.println(students[i].name + " : " + students[i].marks);
-  }
+  // for (int i = 0; i < students.length ; i ++) {
+  //   System.out.println(students[i].name + " : " + students[i].marks);
+  // }
+for (Student stud : students) {
+  System.out.println(stud.name + " : " + stud.marks + " rollnos : " + stud.rollno);
+}
+
 }
 }
