@@ -1,37 +1,38 @@
-class Mobile {
-    String brands;
- int price;
- static String name;
+class Human 
+{
+   private int age;
+   private String name;
 
-  public void show() {
-    System.out.println(brands + " : " + price + " : " + name);
-  }
-  public static void show1(Mobile obj) {
-    System.out.println(obj.brands + " : " + obj.price + " : " + name);
-  }
+public int getAge()
+{
+  return age;
+}
+public void setAge(int a)
+{
+  age = a;
+}
+
+public String getName()
+{
+  return name;
+}
+public void setName(String n) 
+{
+  name = n;
+
+}
 
 }
 
 
-
-public class Hello {
+public class Hello 
+{
   public static void main(String[] args) {
-Mobile obj1 = new Mobile();
-obj1.brands = "Apple";
-Mobile.name = "Hand phone";
-obj1.price = 100000;
+Human obj = new Human();
+obj.setAge(22);
+obj.setName("bapunu");
+System.out.println(obj.getName() + " : " + obj.getAge());
 
-Mobile obj2 = new Mobile();
-obj2.brands = "oppo";
-Mobile.name = "Smart Phone";
-obj2.price = 150000;
-
-Mobile.name = "phone";
-
-
-obj1.show();
-obj2.show();
-Mobile.show1(obj1);
-  
+    
   }
 }
