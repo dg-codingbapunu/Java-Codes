@@ -1,60 +1,38 @@
-class Human 
+class A 
 {
-   private int age;
-   private String name;
-   private int rollNo;
-
-public Human()   // default constructer
+public A() 
 {
- age = 22;
- name = "bapunu";
- rollNo = 34;
+  super();
+System.out.println("in A");
 }
-public Human(int a, String n , int r) // parameterized constructor
+public A(int n)
 {
-name = n;
-age = a;
-rollNo = r;
+  super();
+System.out.println("int A");
 }
-  public int getAge() {
-    return age;
-  }
-  public void setAge(int age) {
-    this.age = age;
-  }
-  public String getName() {
-    return name;
-  }
-  public void setName(String name) {
-    this.name = name;
-  }
-  public int getRollNo() {
-    return rollNo;
-  }
-  public void setRollNo(int rollNo) {
-    this.rollNo = rollNo;
-  }
+}
 
-
-
+class B extends A 
+{
+public B()
+{
+  super();
+  System.out.println("in B");
+}
+public B(int a)
+{
+  this();
+  System.out.println("int B ");
+}
 }
 
 
-public class Hello 
+
+public class Hello {
+public static void main(String[] args) 
 {
-  public static void main(String[] args) 
-  {
-
-Human obj = new Human(16 , "bapunu", 143);
-
-
-System.out.println(obj.getName() + " : " + obj.getAge() + " : " + obj.getRollNo());
-// obj.setAge(22);
-// obj.setName("bapunu");
-// obj.setRollNo(143);
-// System.out.println(obj.getName() + " : " + obj.getAge() + " : " + obj.getRollNo());
-
- 
+  B obj = new B(5);
+  
 }
-
+  
 }
