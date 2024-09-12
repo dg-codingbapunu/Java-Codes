@@ -2,6 +2,7 @@ class Human
 {
    private int age;
    private String name;
+   private int rollNo;
 
 public int getAge()
 {
@@ -21,6 +22,16 @@ public void setName(String n)
   name = n;
 
 }
+public int getRoll()
+{
+  return rollNo;
+}
+
+public void setRoll(int r) 
+
+{
+rollNo = r;
+}
 
 }
 
@@ -31,7 +42,8 @@ public class Hello
 Human obj = new Human();
 obj.setAge(22);
 obj.setName("bapunu");
-System.out.println(obj.getName() + " : " + obj.getAge());
+obj.setRoll(143);
+System.out.println(obj.getName() + " : " + obj.getAge() + " : " + obj.getRoll());
 
     
   }
