@@ -1,19 +1,29 @@
-
-
-
-
-class Hello 
+class A 
 {
-  public static void main(String[] args) 
-  
+  public void show()
   {
-    VeryAdvCalc obj = new VeryAdvCalc();
-    int r1 = obj.add(239, 6450);
-    int r2 = obj.sub(456, 78);
-    int r3 = obj.multy(23, 89);
-    int r4 = obj.div(45, 9);
-    double r5 = obj.power(2, 12);
+    System.out.println("in the A show");
+  }
+  public void config()
+  {
+    System.out.println("In Config");
+  }
+}
+ class B extends A
+{
+public void show()
+{
+  System.out.println("in B show");
+}
+}
 
-    System.out.println(r1 + "  : " + r2 + " : " + r3 + " :  " + r4 + " : " + r5);
+
+public class Hello 
+{
+  public static void main(String [] args)
+  {
+B obj = new B();
+obj.show();
+obj.config();
   }
 }
