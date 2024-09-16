@@ -1,27 +1,38 @@
-class A 
+ abstract class  Car
 {
-  public void show1()
+public  abstract void drive();
+public abstract void fly();
+
+public void playMusic()
+{
+  System.out.println("playing...");
+}
+
+}
+  abstract class Mercedes extends Car
+{
+  public void drive()
   {
-System.out.println("in A show");
+    System.out.println("Drive..");
   }
 }
-class B extends A
+class Wagnor extends Mercedes 
 {
-  public void show2()
-  {
-    System.out.println("in B show");
-  }
+public void fly()
+{
+  System.out.println("Flying..");
 }
+}
+
 
 public class Hello
 {
-  public static void main(String[] args) 
-  {
-A obj = (A) new B(); // upcasting
-obj.show1(); 
- B obj1 =(B) obj; // downcasting
- obj1.show2();
+  public static void main(String[] args)  {
+  Wagnor obj = new Wagnor();
 
-   
+obj.drive();
+obj.playMusic();
+obj.fly();
+    
   }
 }
