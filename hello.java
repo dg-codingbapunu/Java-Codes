@@ -16,7 +16,7 @@ public void playMusic()
     System.out.println("Drive..");
   }
 }
-class Wagnor extends Mercedes 
+class Wagnor extends Mercedes // concrete class make object but abstract class not!
 {
 public void fly()
 {
