@@ -1,32 +1,44 @@
-  class  Calc 
+class Laptop
 {
-  public final void show()
+String model;
+int price;
+
+public String toString()
 {
-  System.out.println("in Bapun show");
+  return model + " : " + price;
+
 }
-public void add(int n1, int n2)
+
+public boolean equals(Laptop that)
 {
-System.out.println(n1 + n2);
+if(this.model.equals(that.model) && this.price == that.price)
+{
+  return true;
+}
+else 
+{
+  return false;
+}
 }
 
 }
 
-class AdvCalc extends Calc // make finnal class to stop inheritance of ypur class
-{
-public void show() // to stop methodoverride we use final key word withj method
-{
-  System.out.println("in sinu show");
-}
-}
 
 
-class Hello
+class Hello 
 {
   public static void main(String[] args) 
   {
-AdvCalc obj = new AdvCalc();
-obj.show();
-obj.add(3, 8);
-   
+    Laptop obj = new Laptop();
+    obj.model = "lenove 90";
+    obj.price = 40000;
+
+    Laptop obj1 = new Laptop();
+    obj1.model = "lenove 90";
+    obj1.price = 40000;
+
+    boolean result = obj.equals(obj1);
+
+    System.out.println(result);
   }
 }
