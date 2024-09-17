@@ -1,38 +1,30 @@
- abstract class  Car
+class A 
 {
-public  abstract void drive();
-public abstract void fly();
-
-public void playMusic()
-{
-  System.out.println("playing...");
-}
-
-}
-  abstract class Mercedes extends Car
-{
-  public void drive()
+  public void show()
   {
-    System.out.println("Drive..");
+    System.out.println("In A show");
+  }
+
+class B 
+{
+  public void config()
+  {
+    System.out.println("in B show");
   }
 }
-class Wagnor extends Mercedes // concrete class make object but abstract class not!
-{
-public void fly()
-{
-  System.out.println("Flying..");
-}
+
 }
 
 
-public class Hello
-{
-  public static void main(String[] args)  {
-  Wagnor obj = new Wagnor();
 
-obj.drive();
-obj.playMusic();
-obj.fly();
+public class Hello {
+
+  public static void main(String[] args) 
+  {
+    A obj = new A();
+    obj.show();
+  A.B obj1 = obj.new B();
+  obj1.config();
     
   }
 }
