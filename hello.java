@@ -1,9 +1,7 @@
-class Developer
+
+enum Status
 {
-  public void devApp()
-  {
-    System.out.println("coding...");
-  }
+  Running, Failed, Pending, Success; // named constants
 }
 
 
@@ -11,10 +9,17 @@ class Developer
 
 public class Hello 
 {
-public static void main(String[] args) 
-{
-  Developer bapunu = new Developer();
-  bapunu.devApp();
-}
+
+  public static void main(String[] args) 
   
+  {
+    Status [] ss = Status.values();
+    
+   
+   
+   for(Status s : ss)
+   {
+    System.out.println(s);
+   }
+  }
 }
