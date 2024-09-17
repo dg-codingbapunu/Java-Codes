@@ -1,30 +1,40 @@
- abstract class A 
+interface A
 {
-  public abstract void  show();
-  public abstract void conflig();
- 
+  void show();
+  public abstract void run();
 }
 
-// abstract class use as inner class in anonymous object
-
-class Hello
+interface C
 {
+public void drive();
+
+}
+
+
+class B implements A,C
+{
+  public void show()
+{
+  System.out.println("in A show");
+}
+public void run()
+{
+  System.out.println("in run..");
+}
+public void drive()
+{
+  System.out.println("im driving..");
+}
+}
+
+
+public class Hello {
+
   public static void main(String[] args) 
   {
-    A obj = new A()
-    {
-      public void show()
-      {
-        System.out.println("in new show");
-      }
-      public void conflig()
-      {
-        System.out.println("in new conflig");
-      }
-    }
-    
-    ;
+    B obj = new B(); // multiple interfaces method can use in one class
+    obj.drive(); 
     obj.show();
-    obj.conflig();
+    obj.run();
   }
 }
