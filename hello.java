@@ -1,12 +1,11 @@
-class A 
+ abstract class A 
 {
-  public void show()
-  {
-    System.out.println("in A show");
-  }
+  public abstract void  show();
+  public abstract void conflig();
+ 
 }
 
-
+// abstract class use as inner class in anonymous object
 
 class Hello
 {
@@ -18,9 +17,14 @@ class Hello
       {
         System.out.println("in new show");
       }
+      public void conflig()
+      {
+        System.out.println("in new conflig");
+      }
     }
     
     ;
     obj.show();
+    obj.conflig();
   }
 }
