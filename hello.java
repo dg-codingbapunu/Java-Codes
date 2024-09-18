@@ -2,7 +2,7 @@
 @FunctionalInterface
 interface A 
 {
-  void show();
+  void show(int i);
 
  
 }
@@ -12,15 +12,10 @@ interface A
  {
     public static void main(String[] args) 
     {
-      A obj = new A() {
-        
-public void show()
-{
-  System.out.println("in showq");
-}
+   
+   A obj = (int i )  -> System.out.println("in show" + " : " + i);
+   obj.show(3);   // lambda expression
 
-      };
-
-      obj.show();
+     
     }
  }
