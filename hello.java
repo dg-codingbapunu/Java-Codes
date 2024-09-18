@@ -1,21 +1,20 @@
-
-@FunctionalInterface
 interface A 
 {
-  void show(int i);
-
- 
+  public int add(int j, int k);
 }
 
 
- public class Hello
- {
+class Hello
+{
     public static void main(String[] args) 
     {
-   
-   A obj = (int i )  -> System.out.println("in show" + " : " + i);
-   obj.show(3);   // lambda expression
+      
+        A obj = (j, k) -> j+k;
+       
+int result = obj.add(3, 4);
+System.out.println(result);
+       
 
-     
+
     }
- }
+}
