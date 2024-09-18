@@ -1,31 +1,26 @@
 
-class A 
+@FunctionalInterface
+interface A 
 {
-  public void show1()
-  {
-    System.out.println("in A show");
-  }
-}
-class B extends A
-{
-  @Override
-  
-  public void show1()
-  {
-      System.out.println("in B show");
-  }
+  void show();
+
+ 
 }
 
 
-
-public class Hello 
+ public class Hello
+ {
+    public static void main(String[] args) 
+    {
+      A obj = new A() {
+        
+public void show()
 {
-
-  public static void main(String[] args) 
-  {
-    B obj = new B();
-
-    obj.show1();
-  }
-  
+  System.out.println("in showq");
 }
+
+      };
+
+      obj.show();
+    }
+ }
