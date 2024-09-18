@@ -1,9 +1,20 @@
 
-enum Status
+class A 
 {
-  Running, Failed, Pending, Success; // named constants
+  public void show1()
+  {
+    System.out.println("in A show");
+  }
 }
-
+class B extends A
+{
+  @Override
+  
+  public void show1()
+  {
+      System.out.println("in B show");
+  }
+}
 
 
 
@@ -11,23 +22,10 @@ public class Hello
 {
 
   public static void main(String[] args) 
-  
   {
-   
-    Status s = Status.Success;
-    if(s == Status.Failed)
-    {
-      System.out.println("Try Again");
-    } else if(s == Status.Pending)
-    {
-      System.out.println("please Wait");
-    } else if (s == Status.Running) 
-    {
-      System.out.println("All Good");
-    } else 
-      {
-System.out.println("Done");
+    B obj = new B();
 
-      }
+    obj.show1();
   }
+  
 }
