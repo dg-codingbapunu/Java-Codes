@@ -1,6 +1,8 @@
+@FunctionalInterface
 interface A 
 {
   public int add(int j, int k);
+ 
 }
 
 
@@ -11,10 +13,9 @@ class Hello
       
         A obj = (j, k) -> j+k;
        
-int result = obj.add(3, 4);
-System.out.println(result);
+      int result = obj.add(3, 4);
+
+      System.out.println(result);
        
-
-
     }
 }
