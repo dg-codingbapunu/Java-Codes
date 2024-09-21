@@ -1,21 +1,26 @@
-@FunctionalInterface
-interface A 
-{
-  public int add(int j, int k);
- 
-}
-
-
 class Hello
 {
-    public static void main(String[] args) 
-    {
-      
-        A obj = (j, k) -> j+k;
-       
-      int result = obj.add(3, 4);
+    public static void main(String[] args)
 
-      System.out.println(result);
-       
-    }
+      {
+
+        int i = 0;
+        int j = 0;
+
+try 
+{
+   j = 20/i;
+}
+catch (Exception e)
+{
+System.out.println("my fault sorry");
+} 
+
+
+      
+  System.out.println(j);
+  System.out.println(i);
+  System.out.println("try again");
+      
+      }
 }
