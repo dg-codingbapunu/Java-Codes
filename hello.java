@@ -1,34 +1,20 @@
-// import java.util.ArrayList;
-// import java.util.HashSet;
-// import java.util.List;
-import java.util.Set;
-import java.util.TreeSet;
+import java.util.HashMap;
+import java.util.Map;
 
-public class Hello
+public class Hello 
 {
+
   public static void main(String[] args) 
-  
   {
+    Map<String, Integer> students = new HashMap<>();
 
-    Set<Integer> nums = new TreeSet<Integer>();
+    students.put("bapunu", 62);
+    students.put("sinu", 7);
+    students.put("Harsh", 60);
+    students.put("ladu", 92);
+    students.put("ladu", 100);// key are unique
 
-    nums.add(142);
-    nums.add(389);
-    nums.add(409);
-    nums.add(765);
-    nums.add(765);
-    // nums.add(7); set does'nt support duplicate value
-   
-    // for sorted value we can use TreeSet
-for(int n : nums)
-{
-  System.out.println(n);
-
-}
-
-// to know index use List not colllection
   
-   
-
   }
+  
 }
