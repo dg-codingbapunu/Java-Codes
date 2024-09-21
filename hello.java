@@ -1,35 +1,34 @@
-class Hello
-{
-    @SuppressWarnings("null")
-    public static void main(String[] args)
+// import java.util.ArrayList;
+// import java.util.HashSet;
+// import java.util.List;
+import java.util.Set;
+import java.util.TreeSet;
 
-      {
+public class Hello
+{
+  public static void main(String[] args) 
+  
+  {
 
-        int i = 2;
-        int j = 0;
-        int nums[] = new int[5];
-        String str = null;
+    Set<Integer> nums = new TreeSet<Integer>();
 
-try 
+    nums.add(142);
+    nums.add(389);
+    nums.add(409);
+    nums.add(765);
+    nums.add(765);
+    // nums.add(7); set does'nt support duplicate value
+   
+    // for sorted value we can use TreeSet
+for(int n : nums)
 {
-   j = 20/i;
-   System.out.println(str.length());
-   System.out.println(nums[5]);
+  System.out.println(n);
+
 }
-catch (ArithmeticException e)
-{
-System.out.println("my fault sorry");
-} 
-catch (ArrayIndexOutOfBoundsException e)
-{
-System.out.println("stay in your limit");
-}
-catch (Exception e)
-{
-  System.out.println("im the parennt of all exception");
-}
-      
- System.out.println(j);
-      
-      }
+
+// to know index use List not colllection
+  
+   
+
+  }
 }
