@@ -34,15 +34,7 @@ public class Hello
    
      {
      
-        if(i.age < j.age)
-        {
-          return 1;
-        }
-
-         
-      else {
-        return -1;
-      }
+       return i.age > j.age ? 1:-1;
        
       
       
