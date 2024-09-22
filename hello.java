@@ -4,20 +4,39 @@ import java.util.Comparator;
 import java.util.List;
 
 
+class Student
+{
+int age;
+String name;
+
+public String toString() {
+  return "Student [age=" + age + ", name=" + name + "]";
+}
+
+public Student(int age, String name) {
+  this.age = age;
+  this.name = name;
+}
+
+
+}
+
+
+
 public class Hello 
 {
 
   public static void main(String[] args) 
   {
 
-    Comparator<Integer> comp = new Comparator<Integer>() 
+    Comparator<Student> comp = new Comparator<Student>() // comparator use own logic for sorting
     
     {
 
-      public int compare(Integer i, Integer j)
+      public int compare(Student i, Student j)
      {
      
-        if(i%10 > j%10)
+        if(i.age > j.age)
         {
           return 1;
         }
@@ -36,17 +55,27 @@ public class Hello
 
 
 
-List<Integer> nums = new ArrayList<>();
+List<Student> nums = new ArrayList<>();
 
 
-nums.add(23);
-nums.add(65);
-nums.add(71);
-nums.add(79);      // samall to big number sorting 
+nums.add(new Student(34, "john"));
+nums.add(new Student(24, "rudra"));
+nums.add(new Student(14, "sinu"));
+nums.add(new Student(44, "Bapunu"));
+
+
+
+
+      // samall to big number sorting 
 
 Collections.sort(nums,comp);
 
-System.out.println(nums);
+for(Student s : nums)
+{
+  System.out.println(s);
+}
+
+
   
   }
   
