@@ -29,14 +29,12 @@ public class Hello
   public static void main(String[] args) 
   {
 
-    Comparator<Student> comp = new Comparator<Student>() // comparator use own logic for sorting
+    Comparator<Student> comp = ( i,  j) ->// comparator use own logic for sorting
     
-    {
-
-      public int compare(Student i, Student j)
+   
      {
      
-        if(i.age > j.age)
+        if(i.age < j.age)
         {
           return 1;
         }
@@ -48,8 +46,7 @@ public class Hello
        
       
       
-     }
-      
+    
     };
 
 
