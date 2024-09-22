@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Stream;
 
 public class Hello
 {
@@ -7,6 +8,7 @@ public class Hello
   {
 
   List <Integer> nums = new ArrayList<>();
+
   
   nums.add(8);
   nums.add(18);
@@ -16,24 +18,20 @@ public class Hello
   nums.add(79);
 
 
-nums.forEach(p-> System.out.println(p));
+  Stream<Integer> s1 = nums.stream();
+
+Stream<Integer> s2 = s1.filter(i-> i%2==0);
 
 
-// int sum = 0;
 
-// for(int n : nums)
-// {
 
-// if(n%2==0)
-// {
-//   n = n*5;
-// sum = sum+n;
+s2.forEach(j -> System.out.println(j));
 
-// }
 
-// }
 
-//   System.out.println(sum);
+
+// you cant print s1 (stream) then one time it gives us copilation error
+
     
   }
 }
