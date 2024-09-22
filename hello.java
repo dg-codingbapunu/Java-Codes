@@ -1,71 +1,39 @@
 import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Comparator;
 import java.util.List;
 
-
-class Student
+public class Hello
 {
-int age;
-String name;
-
-public String toString() {
-  return "Student [age=" + age + ", name=" + name + "]";
-}
-
-public Student(int age, String name) {
-  this.age = age;
-  this.name = name;
-}
-
-
-}
-
-
-
-public class Hello 
-{
-
   public static void main(String[] args) 
   {
 
-    Comparator<Student> comp = ( i,  j) ->// comparator use own logic for sorting
-    
-   
-     {
-     
-       return i.age > j.age ? 1:-1;
-       
-      
-      
-    
-    };
-
-
-
-
-List<Student> nums = new ArrayList<>();
-
-
-nums.add(new Student(34, "john"));
-nums.add(new Student(24, "rudra"));
-nums.add(new Student(14, "sinu"));
-nums.add(new Student(44, "Bapunu"));
-
-
-
-
-      // samall to big number sorting 
-
-Collections.sort(nums,comp);
-
-for(Student s : nums)
-{
-  System.out.println(s);
-}
-
-
+  List <Integer> nums = new ArrayList<>();
   
+  nums.add(8);
+  nums.add(18);
+  nums.add(67);
+  nums.add(12);
+  nums.add(6);
+  nums.add(79);
+
+
+nums.forEach(p-> System.out.println(p));
+
+
+// int sum = 0;
+
+// for(int n : nums)
+// {
+
+// if(n%2==0)
+// {
+//   n = n*5;
+// sum = sum+n;
+
+// }
+
+// }
+
+//   System.out.println(sum);
+    
   }
-  
 }
