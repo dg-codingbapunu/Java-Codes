@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 import java.util.List;
-import java.util.stream.Stream;
+
 
 public class Hello
 {
@@ -18,17 +18,12 @@ public class Hello
   nums.add(79);
 
 
-  Stream<Integer> s1 = nums.stream();
+int result = nums.stream()
+              .filter(i -> i%2==0)
+              .map(i -> i *2)
+              .reduce(0,(p,e) -> p + e);
 
-Stream<Integer> s2 = s1.filter(i-> i%2==0);
-
-
-
-
-s2.forEach(j -> System.out.println(j));
-
-
-
+System.out.println(result);
 
 // you cant print s1 (stream) then one time it gives us copilation error
 
