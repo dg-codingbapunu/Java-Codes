@@ -12,6 +12,8 @@ public class Hello {
         p2.age = 80;
         p2.name = "patitapabana";
         System.out.println(p2.age + " " + p2.name);
+        p1.eat();
+        p2.walk();
 
 
     }
@@ -20,5 +22,10 @@ public class Hello {
 class Person {
     String name;
     int age;
-    
+    void walk () {
+        System.out.println(name + " " +"walk");
+    }
+    void eat () {
+        System.out.println(name +" "+"eat");
+    }
 }
