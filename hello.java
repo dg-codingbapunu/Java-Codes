@@ -1,41 +1,31 @@
 public class Hello {
 
     public static void main(String[] args) {
-        
-
-        Person p1 = new Person();
-        p1.age = 90;
-        p1.name = "bapunu";
-        System.out.println(p1.name + "" + p1.age);
-
-        Person p2 = new Person();
-        p2.age = 80;
-        p2.name = "patitapabana";
-        System.out.println(p2.age + " " + p2.name);
-        p1.eat();
-        p2.walk(5);
-
-
+        Audi a1 = new Audi();
+        a1.start();
+        a1.show();
     }
 }
 
-class Person {
-    String name;
-    int age;
-
-
-    public Person () {
-        System.out.println("creacting an object");
+class Bmw extends Car {
+    @Override
+    void start() {
+        System.out.println("Bmw start");
     }
+}
 
-    void walk () {
-        System.out.println(name + " " +"walk");
-    }
-    void eat () {
-        System.out.println(name +" "+"eat");
-    }
+class Audi extends Car {
+    @Override
+    void start() {
+        System.out.println("audi started");
 
-    void walk (int stepes) {
-        System.out.println(name + " " +"walk" + stepes);
     }
+    void show() {
+        System.out.println("hello");
+    }
+}
+
+abstract class Car {
+    int price;
+    abstract void start();
 }
