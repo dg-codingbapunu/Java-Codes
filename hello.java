@@ -13,7 +13,7 @@ public class Hello {
         p2.name = "patitapabana";
         System.out.println(p2.age + " " + p2.name);
         p1.eat();
-        p2.walk();
+        p2.walk(5);
 
 
     }
@@ -22,10 +22,20 @@ public class Hello {
 class Person {
     String name;
     int age;
+
+
+    public Person () {
+        System.out.println("creacting an object");
+    }
+
     void walk () {
         System.out.println(name + " " +"walk");
     }
     void eat () {
         System.out.println(name +" "+"eat");
+    }
+
+    void walk (int stepes) {
+        System.out.println(name + " " +"walk" + stepes);
     }
 }
