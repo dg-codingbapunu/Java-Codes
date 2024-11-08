@@ -15,8 +15,7 @@ public class Hello {
         list.add(100);
         list.add(890);
 
-        list.remove(Integer.valueOf(7));
-
+       list.clear(); // to remove all element
         System.out.println(list);
 
     }
