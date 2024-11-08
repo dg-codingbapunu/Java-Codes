@@ -15,8 +15,9 @@ public class Hello {
         list.add(100);
         list.add(890);
 
-       list.clear(); // to remove all element
-        System.out.println(list);
+      System.out.println(list);
+     
+      System.out.println(list.contains(40));
 
     }
 }
