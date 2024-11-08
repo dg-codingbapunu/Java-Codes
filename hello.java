@@ -1,16 +1,20 @@
 import java.util.ArrayList;
+import java.util.List;
 
 public class Hello {
 
     public static void main(String[] args) {
 
-       ArrayList<String> StudentsName = new ArrayList<>();
-
-       StudentsName.add("rakesh0");
-       StudentsName.add("rakesh1"); StudentsName.add("rakesh2"); StudentsName.add("rakesh3");
-       System.out.println(StudentsName);
-
-       StudentsName.add("rakesh4");
+      
+    List<Integer> list = new ArrayList<>();
+       list.add(1);
+       list.add(9);
+       list.add(7);
+       System.out.println(list);
        
+list.add(1, 70);
+System.out.println(list);
+      
+
     }
 }
