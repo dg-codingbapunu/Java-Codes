@@ -7,16 +7,17 @@ public class Hello {
 
       
     List<Integer> list = new ArrayList<>();
-       list.add(1);
-       list.add(9);
-       list.add(7);
-    //    System.out.println(list);
-       
-list.add(1, 70);
-System.out.println(list);
-// System.out.println(list.get(0));
-   list.remove(2);
-   System.out.println(list);
+        list.add(1);
+        list.add(9);
+        list.add(7);
+        list.add(90);
+        list.add(10);
+        list.add(100);
+        list.add(890);
+
+        list.remove(Integer.valueOf(7));
+
+        System.out.println(list);
 
     }
 }
