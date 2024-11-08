@@ -15,9 +15,9 @@ public class Hello {
         list.add(100);
         list.add(890);
 
-      System.out.println(list);
-     
-      System.out.println(list.contains(40));
+     for (int n :list){
+        System.out.println(n);
+     }
 
     }
 }
