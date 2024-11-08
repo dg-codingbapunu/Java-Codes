@@ -1,18 +1,16 @@
-public class Hello implements Car{
+import java.util.ArrayList;
+
+public class Hello {
 
     public static void main(String[] args) {
-        
-        Hello h2 = new Hello();
-        h2.start();
-        
-    }
 
-    @Override
-    public void start() {
-       System.out.println("inside interfaces");
+       ArrayList<String> StudentsName = new ArrayList<>();
+
+       StudentsName.add("rakesh0");
+       StudentsName.add("rakesh1"); StudentsName.add("rakesh2"); StudentsName.add("rakesh3");
+       System.out.println(StudentsName);
+
+       StudentsName.add("rakesh4");
+       
     }
 }
-
-    interface Car {
-        void start ();
-    }
