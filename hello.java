@@ -1,6 +1,7 @@
 import java.util.HashSet;
 import java.util.LinkedHashSet;
 import java.util.Set;
+import java.util.TreeSet;
 
 public class Hello {
 
@@ -9,13 +10,13 @@ public class Hello {
    // set not allowed duplicate element
 
 
-   Set<Integer> set = new LinkedHashSet<>();
+   Set<Integer> set = new TreeSet<>();
 
    set.add(30); 
-   set.add(40);  
+   set.add(20);  
    set.add(50);  
    set.add(60);  
-   set.add(30);  
+   set.add(10);  
 
  System.out.println(set);
 
