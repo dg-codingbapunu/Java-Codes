@@ -1,4 +1,5 @@
 import java.util.HashSet;
+import java.util.LinkedHashSet;
 import java.util.Set;
 
 public class Hello {
@@ -8,7 +9,7 @@ public class Hello {
    // set not allowed duplicate element
 
 
-   Set<Integer> set = new HashSet<>();
+   Set<Integer> set = new LinkedHashSet<>();
 
    set.add(30); 
    set.add(40);  
@@ -16,12 +17,15 @@ public class Hello {
    set.add(60);  
    set.add(30);  
 
-//  System.out.println(set);
+ System.out.println(set);
 
  set.remove(30);  
  System.out.println(set.contains(60));
  
- System.out.println(set);
+ set.clear();
+ System.out.println(set.isEmpty());
+
+
 
     }
 }
