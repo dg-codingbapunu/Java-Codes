@@ -15,9 +15,9 @@ public class Hello {
         queue.offer(132);
 
         System.out.println("queue:" + queue);
-
         System.out.println(queue.poll());
-        System.out.println("queue:" + queue);
+        System.out.println(queue.peek());
+       
 
 
     }
