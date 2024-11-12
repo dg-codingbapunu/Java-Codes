@@ -1,23 +1,26 @@
-import java.util.ArrayList;
-import java.util.List;
+import java.util.Stack;
 
 public class Hello {
 
     public static void main(String[] args) {
-
+        
       
-    List<Integer> list = new ArrayList<>();
-        list.add(1);
-        list.add(9);
-        list.add(7);
-        list.add(90);
-        list.add(10);
-        list.add(100);
-        list.add(890);
+     Stack <String> animal = new Stack<>();
+     animal.push("lion");  
+     animal.push("horse");   
+     animal.push("tiger");   
+     animal.push("elephant");   
+ 
+    
+// System.out.println("stack:" +  animal);
 
-     for (int n :list){
-        System.out.println(n);
-     }
+System.out.println(animal.peek());
+animal.pop();
+animal.pop();
+
+System.out.println(animal.peek());
+
+System.out.println("stack:" +  animal);
 
     }
 }
