@@ -19,7 +19,7 @@ public class Hello {
 //  System.out.println(set);
 
  set.remove(30);  
- System.out.println(set.contains(30));
+ System.out.println(set.contains(60));
  
  System.out.println(set);
 
