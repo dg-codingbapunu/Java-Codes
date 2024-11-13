@@ -16,11 +16,9 @@ public class Hello {
         numbers.put("two", 4);
         numbers.put("five", 5);
         numbers.put("alpha", 100);
-  if (!numbers.containsKey("one")) {
 
-    numbers.put("one", 2);
-
-  }
+        numbers.remove("alpha");
+  
   System.out.println(numbers);
    
   for (String key: numbers.keySet()) {
