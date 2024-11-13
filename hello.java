@@ -1,31 +1,39 @@
-
-import java.util.Set;
-import java.util.TreeSet;
+import java.util.HashMap;
+import java.util.Map;
 
 public class Hello {
 
     public static void main(String[] args) {
         
-   // set not allowed duplicate element
+
+      Map<String , Integer> numbers = new HashMap<>();
 
 
-   Set<Integer> set = new TreeSet<>();
+        numbers.put("one", 1);
+       
+        numbers.put("three", 3);
+        numbers.put("two", 4);
+  if (!numbers.containsKey("one")) {
 
-   set.add(30); 
-   set.add(20);  
-   set.add(50);  
-   set.add(60);  
-   set.add(10);  
+    numbers.put("one", 2);
 
- System.out.println(set);
+  }
 
- set.remove(30);  
- System.out.println(set.contains(60));
- 
- set.clear();
- System.out.println(set.isEmpty());
+   
+  for (String key: numbers.keySet()) {
 
+    System.out.println(key);
+  }
+
+
+  for (Integer value: numbers.values()) {
+
+    System.out.println(value);
+  }
+       
 
 
     }
+
+ 
 }
