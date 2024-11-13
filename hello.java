@@ -1,40 +1,22 @@
-
-import java.util.Map;
-import java.util.TreeMap;
+import java.util.Arrays;
 
 public class Hello {
 
     public static void main(String[] args) {
         
 
-      Map<String , Integer> numbers = new TreeMap<>();
+      int[] nums  = {11,3,31,49,5,6,7,823,90,10};
 
 
-        numbers.put("one", 1);
-       
-        numbers.put("three", 3);
-        numbers.put("two", 4);
-        numbers.put("five", 5);
-        numbers.put("alpha", 100);
+      Arrays.sort(nums);
+      // System.out.println(nums);
 
-        numbers.remove("alpha");
-  
-  System.out.println(numbers);
-   
-  for (String key: numbers.keySet()) {
+      for (int i : nums) {
+        System.out.println(i);
+      }
+//
 
-    System.out.println(key);
-  }
-
-
-  for (Integer value: numbers.values()) {
-
-    System.out.println(value);
-  }
-       
 
 
     }
-
- 
 }
