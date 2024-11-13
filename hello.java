@@ -1,24 +1,27 @@
-import java.util.HashMap;
+
 import java.util.Map;
+import java.util.TreeMap;
 
 public class Hello {
 
     public static void main(String[] args) {
         
 
-      Map<String , Integer> numbers = new HashMap<>();
+      Map<String , Integer> numbers = new TreeMap<>();
 
 
         numbers.put("one", 1);
        
         numbers.put("three", 3);
         numbers.put("two", 4);
+        numbers.put("five", 5);
+        numbers.put("alpha", 100);
   if (!numbers.containsKey("one")) {
 
     numbers.put("one", 2);
 
   }
-
+  System.out.println(numbers);
    
   for (String key: numbers.keySet()) {
 
