@@ -13,11 +13,11 @@ public class Hello {
         p2.age = 23;
 
 
-        System.out.println(p1.name + "  " + p1.age);
+        // System.out.println(p1.name + "  " + p1.age);
 
-        System.out.println(p2.name + "  " + p2.age);
+        // System.out.println(p2.name + "  " + p2.age);
 
-        p1.walk();
+        p1.walk(6);
         p2.eat();
         p1.eat();
         p2.walk();
@@ -34,5 +34,12 @@ class Person {
     }
     void eat() {
         System.out.println(name + " is Eating ");
+    }
+
+    void walk(int steps) {
+
+        System.out.println(name + " is Walked " + steps + " steps ");
+
+
     }
 }
