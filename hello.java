@@ -8,9 +8,9 @@ public class Hello {
         p1.age = 20;
         p1.name = "Bapun";
 
-        Person p2 = new Person();
-        p2.name = "Sinu";
-        p2.age = 23;
+        // Person p2 = new Person();
+        // p2.name = "Sinu";
+        // p2.age = 23;
 
 
         // System.out.println(p1.name + "  " + p1.age);
@@ -18,15 +18,22 @@ public class Hello {
         // System.out.println(p2.name + "  " + p2.age);
 
         p1.walk(6);
-        p2.eat();
+        // p2.eat();
         p1.eat();
-        p2.walk();
+        // p2.walk();
+        System.out.println(Person.count);
     }
 }
 
 class Person {
     String name;
     int age;
+    static int count;
+
+    public Person() {
+        count++;
+        System.out.println("Create a object");
+    }
 
     void walk() {
         System.out.println(name +" is Walking ");
