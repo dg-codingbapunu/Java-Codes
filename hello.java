@@ -1,22 +1,20 @@
-import java.util.Arrays;
 
 public class Hello {
 
     public static void main(String[] args) {
         
 
-      int[] nums  = {11,3,31,49,5,6,7,823,90,10};
+        Person p1 = new Person();
+        p1.age = 20;
+        p1.name = "Bapun";
 
-
-      Arrays.sort(nums);
-      // System.out.println(nums);
-
-      for (int i : nums) {
-        System.out.println(i);
-      }
-//
-
+        System.out.println(p1.name + "  " + p1.age);
 
 
     }
+}
+
+class Person {
+    String name;
+    int age;
 }
