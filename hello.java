@@ -8,10 +8,9 @@ public class Hello {
         p1.age = 20;
         p1.name = "Bapun";
 
-        // Person p2 = new Person();
-        // p2.name = "Sinu";
-        // p2.age = 23;
-
+        Person p2 = new Person(31,"sinu");
+        
+    System.out.println(p2.name);
 
         // System.out.println(p1.name + "  " + p1.age);
 
@@ -34,6 +33,14 @@ class Person {
         count++;
         System.out.println("Create a object");
     }
+
+    public Person(int age, String name) {
+        this();
+        this.name = name;
+        this.age = age;
+
+    }
+
 
     void walk() {
         System.out.println(name +" is Walking ");
