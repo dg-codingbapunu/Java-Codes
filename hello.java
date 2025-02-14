@@ -8,39 +8,38 @@ public class Hello {
         p1.age = 20;
         p1.name = "Bapun";
 
-        Person p2 = new Person(31,"sinu");
+       
         
-    System.out.println(p2.name);
+    Developer d1 = new Developer();
+    d1.age = 32;
+    d1.name = "Sagar";
 
-        // System.out.println(p1.name + "  " + p1.age);
+    d1.eat();
+    d1.walk();
 
-        // System.out.println(p2.name + "  " + p2.age);
+        System.out.println(p1.name + "  " + p1.age);
 
-        p1.walk(6);
-        // p2.eat();
+       
+       
+        System.out.println(d1.name + "  " + d1.age);
+    
         p1.eat();
-        // p2.walk();
-        System.out.println(Person.count);
+        p1.walk();
+       
+     
     }
+}
+
+class Developer extends Person{
+
 }
 
 class Person {
     String name;
     int age;
-    static int count;
+   
 
-    public Person() {
-        count++;
-        System.out.println("Create a object");
-    }
-
-    public Person(int age, String name) {
-        this();
-        this.name = name;
-        this.age = age;
-
-    }
-
+    
 
     void walk() {
         System.out.println(name +" is Walking ");
@@ -50,10 +49,5 @@ class Person {
         System.out.println(name + " is Eating ");
     }
 
-    void walk(int steps) {
-
-        System.out.println(name + " is Walked " + steps + " steps ");
-
-
-    }
+   
 }
