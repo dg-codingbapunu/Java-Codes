@@ -1,4 +1,4 @@
-import encpse.Encapsulation;
+
 
 public class Hello {
 
@@ -6,8 +6,7 @@ public class Hello {
         
 
 
-Encapsulation obj = new Encapsulation();
-obj.doWork();
+
 
 
 
