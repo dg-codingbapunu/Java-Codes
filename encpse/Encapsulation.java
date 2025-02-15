@@ -1,6 +1,6 @@
 package encpse;
 
-// Main class
+
 public class Encapsulation {
     public static void main(String[] args) {
         Laptop l1 = new Laptop();  
@@ -14,7 +14,7 @@ class Laptop {
     int ram;
     private int price;
 
-    // Method to set the price with admin check
+   
     public void setPrice(int price, boolean isAdmin) {
         if (!isAdmin) {
             System.out.println("You can't change the price");
