@@ -1,44 +1,30 @@
 package abstrac;
 
-public class Abstraction {
+public class Abstraction implements Car, Person {
   
-public static void main(String[] args) 
-{
+    public static void main(String[] args) {
+      
+      Abstraction obj = new Abstraction();
+      obj.start();
+      obj.walk();
 
-  Audi a1 = new Audi();
-  a1.price = 908;
-  a1.start();
+    }
 
-  BMW b1 = new BMW();
-  b1.price = 256;
-  b1.start();
+    @Override
+    public void start() {
+        System.out.println("Start");
+    }
 
-
-}
- 
-}
-
-class Audi extends Car {
-
- 
-  void start() {
-    System.out.println("Audi is staring");
-    
-  }
-
+    @Override
+    public void walk() {
+        System.out.println("Walking");
+    }
 }
 
-class BMW extends Car {
-
-void start() {
-  System.out.println("Bmw is strting");
+interface Car {
+    void start();
 }
-}
-abstract class Car {
- 
-  int price;
 
-abstract  void start();
-
-
+interface Person {
+    void walk();
 }
