@@ -1,6 +1,7 @@
 
-import java.util.Comparator;
-import java.util.PriorityQueue;
+import java.util.ArrayDeque;
+
+
 
 
 
@@ -10,19 +11,18 @@ public class Hello {
         
 // Priority Queue
 
+ArrayDeque <Integer> adq = new ArrayDeque<>();
 
 
-PriorityQueue<Integer> pq = new  PriorityQueue<>(Comparator.reverseOrder());
+adq.offerLast(2);
+adq.offer(7);
+adq.offer(70);
+adq.offer(72);
+adq.offer(73);
+adq.offerFirst(34);
 
-pq.offer(4);
-pq.offer(39);
-pq.offer(30); 
-pq.offer(29);// Min heap Implement Automatically
-
-System.out.println(pq.poll());
-System.out.println(pq.peek());
-
-System.out.println(pq);
+System.out.println(adq.peekLast());
+System.out.println(adq.peekFirst());
 
 
 
