@@ -1,4 +1,5 @@
 
+import java.util.Comparator;
 import java.util.PriorityQueue;
 
 
@@ -11,14 +12,14 @@ public class Hello {
 
 
 
-PriorityQueue<Integer> pq = new  PriorityQueue<>();
+PriorityQueue<Integer> pq = new  PriorityQueue<>(Comparator.reverseOrder());
 
 pq.offer(4);
 pq.offer(39);
 pq.offer(30); 
 pq.offer(29);// Min heap Implement Automatically
 
-pq.poll();
+System.out.println(pq.poll());
 System.out.println(pq.peek());
 
 System.out.println(pq);
