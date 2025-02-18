@@ -1,22 +1,24 @@
 
-import java.util.Stack;
+import java.util.LinkedList;
+import java.util.Queue;
 
 public class Hello {
 
     public static void main(String[] args) {
         
+Queue<Integer> queue = new LinkedList<>();
 
-  Stack <String> animals = new Stack<>();
+queue.offer(3);
+queue.offer(9);
+queue.offer(93);
+queue.offer(7);
 
-animals.push("Tiger");
-animals.push("Dog");
-animals.push("Cat");
-animals.push("Horse");
+System.out.println(queue);
+System.out.println(queue.poll());
+System.out.println(queue.peek());
+System.out.println(queue);
 
-animals.pop();
-System.out.println(animals.peek());
 
-System.out.println("Stack: " + animals);
 
 
     }
